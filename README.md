@@ -8,6 +8,7 @@ This then spiralled into trying to implement isEven in as many weird ways as pos
 - modulo (naive)
 - bitshiftEquality
 - bitshiftXOR
+- bitwiseXOR
 - bitwiseAND
 - iterative
 - memoized
@@ -22,12 +23,13 @@ Rank | Test | Time (s)
 --- | --- | ---
 1 | `bitwiseAND` | 0.03980480000609532
 2 | `modulo` | 0.04658449999988079
-3 | `bitshiftEquality` | 0.06841870000062045
-4 | `intDivision` | 0.07277319999411702
-5 | `bitshiftXOR` | 0.07857530000910629
-6 | `binaryCheck` | 0.10371320000558626
-7 | `floatDivision` | 0.10890150000341237
-8 | `base10Check` | 0.12126970000099391
+3 | `bitwiseXOR` | 0.05661261100001097
+4 | `bitshiftEquality` | 0.06841870000062045
+6 | `intDivision` | 0.07277319999411702
+7 | `bitshiftXOR` | 0.07857530000910629
+8 | `binaryCheck` | 0.10371320000558626
+9 | `floatDivision` | 0.10890150000341237
+10 | `base10Check` | 0.12126970000099391
 
 Parameters : 
 - range : 1,1000000000
