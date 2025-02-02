@@ -9,6 +9,9 @@ def bitshiftEquality(num): # bitshift right and left to force last bit as zero, 
 def bitshiftXOR(num): # XOR on bitshiftEquality() to check if both numbers are the same (a XOR a = 0)
     return (num ^ (num >> 1) << 1) == 0
 
+def bitwiseXOR(num): # if last digit is zero, XOR difference is exactly 1. If not, atleast 2 bits change from carrying
+    return num ^ num + 1 == 1
+
 def bitwiseAND(num): # bitwise AND with 1 to check if last bit is 1 or 0
     return num & 1 == 0
 
