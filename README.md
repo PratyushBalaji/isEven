@@ -5,15 +5,22 @@ The results were, quite surprising.
 This then spiralled into trying to implement isEven in as many weird ways as possible.
 
 ## Implementations : 
-- modulo (naive)
+### Naive :
+- modulo
+### Bitwise
 - bitshiftEquality
 - bitshiftXOR
 - bitwiseXOR
 - bitwiseAND
+- bitwiseOR
+
+### Iterative & Memoized
 - iterative
 - memoized
+### Division
 - floatDivision
 - intDivision
+### String Manipulation
 - base10Check
 - binaryCheck
 
@@ -23,8 +30,9 @@ Rank | Test | Time (s)
 --- | --- | ---
 1 | `bitwiseAND` | 0.03980480000609532
 2 | `modulo` | 0.04658449999988079
-3 | `bitwiseXOR` | 0.05661261100001097
-4 | `bitshiftEquality` | 0.06841870000062045
+3 | `bitwiseOR` | 0.04972169999219477
+4 | `bitwiseXOR` | 0.05661261100001097
+5 | `bitshiftEquality` | 0.06841870000062045
 6 | `intDivision` | 0.07277319999411702
 7 | `bitshiftXOR` | 0.07857530000910629
 8 | `binaryCheck` | 0.10371320000558626
