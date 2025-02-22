@@ -45,7 +45,7 @@ Parameters :
 
 I could not test iterative and memoized because :
 - iterative just took too long as an O($n$) algorithm, especially since the generated numbers could be upto 1000000000 in my benchmark
-- memoized has worst case O($n$) too, making it slow, but to make it worse : if a number was more than 999 away from the nearest memo entry, it would exceed the maximum recursion depth
+- memoized has worst case O($n$) too, making it slow, but to make it worse : if a number was more than 999 away from the nearest memo entry, it would exceed the maximum allowed recursion depth (on my computer)
 
 Regardless, I did some testing with lower random ranges, here are the results : 
 
